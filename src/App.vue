@@ -1,9 +1,10 @@
 <template>
   <div>
-    
-    <div class="banner">
-      <img src="./Banner Calling Site.jpg" alt="A banner image">
-    </div>
+    <center>
+      <div class="banner">
+        <img src="./Banner Calling Site.jpg" alt="A banner image">
+      </div>
+    </center>
 
     <!-- Nav bar -->
     
@@ -37,5 +38,19 @@
     </div>
   </div>
 </template>
+
+<style>
+.banner {
+  width: 100%;
+}
+
+.banner>img {
+  width: 100%;
+  height: 300px;
+  max-width: 2000px;
+  object-fit: cover;
+}
+</style>
+
 
 
