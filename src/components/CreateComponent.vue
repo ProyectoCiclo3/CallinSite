@@ -46,9 +46,9 @@
           _________________________________________________________________________________________________
         </div>
         <center>
-        <div class="form-group">
-          <button type="button" class="btn btn-warning btn-lg btn-block">Guardar</button>
-        </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-warning btn-lg btn-block">Guardar</button>
+          </div>
         </center>
       </form>
     </div>
@@ -61,7 +61,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      student: {
+      user: {
         name: "",
         lastname:"",
         email: "",
