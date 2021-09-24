@@ -1,24 +1,24 @@
 <template>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <h3 class="text-center">Registrar Empleados</h3>
+      <h3 class="text-center">Iniciar Registro</h3>
       <form @submit.prevent="handleSubmitForm">
         <div class="form-group">
           <label>Nombre</label>
           <input
             type="text"
             class="form-control"
-            v-model="student.name"
+            v-model="user.name"
             required
           />
         </div>
 
         <div class="form-group">
-          <label>Correo</label>
+          <label>Apellido</label>
           <input
             type="email"
             class="form-control"
-            v-model="student.email"
+            v-model="user.lastname"
             required
           />
         </div>
@@ -28,14 +28,28 @@
           <input
             type="text"
             class="form-control"
-            v-model="student.phone"
+            v-model="user.phone"
             required
           />
         </div>
-
+        
         <div class="form-group">
-          <button class="btn btn-danger btn-block">Create</button>
+          <label>Correo Electronico</label>
+          <input
+            type="text"
+            class="form-control"
+            v-model="user.email"
+            required
+          />
         </div>
+        <div>
+          _________________________________________________________________________________________________
+        </div>
+        <center>
+        <div class="form-group">
+          <button type="button" class="btn btn-warning btn-lg btn-block">Guardar</button>
+        </div>
+        </center>
       </form>
     </div>
   </div>
@@ -49,6 +63,7 @@ export default {
     return {
       student: {
         name: "",
+        lastname:"",
         email: "",
         phone: "",
       },
@@ -64,6 +79,7 @@ export default {
           this.$router.push("/view");
           this.student = {
             name: "",
+            lastname: "",
             email: "",
             phone: "",
           };
