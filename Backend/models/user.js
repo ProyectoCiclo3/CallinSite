@@ -3,6 +3,9 @@ const Schema = mongoose.Schema;
 
 let userSchema = new Schema(
   {
+    doc: {
+      type: Number,
+    },
     name: {
       type: String,
     },
@@ -17,7 +20,7 @@ let userSchema = new Schema(
     },
   },
   {
-    collection: "students",
+    collection: "users",
   }
 );
 

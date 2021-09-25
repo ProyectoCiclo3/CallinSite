@@ -19,6 +19,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/view">Ver empleados</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="footer">¡Visitanos!</router-link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -28,7 +31,7 @@
       Registro de Empleados
     </h1>
     <p id="description" class="text-xl font-thin">
-      Ingrese los datos del empleado
+      Registro de informacion de empleados
     </p>
     </header>
 
@@ -49,6 +52,14 @@
   height: 300px;
   max-width: 2000px;
   object-fit: cover;
+}
+
+.footer {
+  background-color: #25294f;
+  height: 200px;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
 }
 </style>
 

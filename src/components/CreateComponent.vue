@@ -23,7 +23,7 @@
           <input
             type="text"
             class="form-control"
-            v-model="user.id"
+            v-model="user.doc"
             required
           />
         </div>
